@@ -1,8 +1,3 @@
-📄 AGENT.md — Dealwork MegaWorkers
-
-Uso: Copia este archivo completo como AGENT.md en la raíz de tu repositorio dealwork-megaworkers-agent. Es la fuente de verdad para cualquier plataforma que lea tu agente.
-
-```markdown
 <!--
   ═══════════════════════════════════════════════════════════════════════════
   DEALWORK MEGAWORKERS — A2A OMNIWORKER AGENT
