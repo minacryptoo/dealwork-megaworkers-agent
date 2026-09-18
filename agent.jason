@@ -1,0 +1,159 @@
+{
+  "$schema": "https://a2aregistry.org/schemas/v1/agent-card.json",
+  "id": "did:web:dealwork.ai:megaworkers",
+  "name": "Dealwork-MegaWorkers",
+  "display_name": "Dealwork MegaWorkers — Agente A2A Omnitask Multi-Worker",
+  "slug": "dealwork-megaworkers",
+  "version": "2.0.0",
+  "protocol_version": "0.2.9",
+  "transport": "JSONRPC",
+  "tagline": "Omnitask A2A agent: URL, archive, document, media, AI",
+  "description": "Autonomous multi-worker A2A agent specialized in zero-cost file pre-processing, deterministic media/document parsing, parallel web scraping, and Gemini AI Python execution.",
+  "category": "developer_tools_and_data_processing",
+  "languages": ["en", "es"],
+  "url": "https://practical-ambition-production.up.railway.app",
+  "icon": "https://dealwork.ai/static/icon.png",
+  "provider": {
+    "name": "Dealwork",
+    "url": "https://dealwork.ai",
+    "email": "agents@dealwork.ai",
+    "contact_person": "Manu_shop@icloud.com",
+    "support_url": "https://t.me/dealwork_agents",
+    "github": "https://github.com/minacryptoo/Dealwork-toloka-prod",
+    "terms_of_service": "https://dealwork.ai/terms",
+    "privacy_policy": "https://dealwork.ai/privacy"
+  },
+  "endpoints": {
+    "agent_card": "https://practical-ambition-production.up.railway.app/.well-known/agent.json",
+    "skills_sitemap": "https://practical-ambition-production.up.railway.app/.well-known/skills.json",
+    "execute": "https://practical-ambition-production.up.railway.app/api/v1/agent/execute",
+    "task_status": "https://practical-ambition-production.up.railway.app/api/v1/tasks/{task_id}",
+    "task_cancel": "https://practical-ambition-production.up.railway.app/api/v1/tasks/{task_id}/cancel",
+    "workers_registry": "https://practical-ambition-production.up.railway.app/api/v1/agent/workers",
+    "health": "https://practical-ambition-production.up.railway.app/health",
+    "metrics": "https://practical-ambition-production.up.railway.app/metrics",
+    "openapi": "https://practical-ambition-production.up.railway.app/openapi.json",
+    "robots": "https://practical-ambition-production.up.railway.app/robots.txt",
+    "swagger_docs": "https://practical-ambition-production.up.railway.app/docs",
+    "redoc_docs": "https://practical-ambition-production.up.railway.app/redoc"
+  },
+  "payments": {
+    "protocol": "x402",
+    "version": 1,
+    "facilitator": "https://facilitator.payai.network",
+    "scheme": "exact",
+    "price_per_task": {
+      "amount": "0.01",
+      "currency": "USDC",
+      "raw_units": "10000"
+    },
+    "default_network": "base",
+    "chain_id": "eip155:8453",
+    "wallets": {
+      "evm": "0xdE732Ef88Eabd42e6510a38c2D191B74FD566C0B",
+      "solana": "EKf6HPb72XWeKzBCdpo2dy25mW325rSkNg2a89RFG34z"
+    },
+    "usdc_contracts": {
+      "base": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "ethereum": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "polygon": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "arbitrum": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "optimism": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+      "solana": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+    }
+  },
+  "workers": [
+    {
+      "id": "url_worker",
+      "name": "Bulk URL Checker & Scraper",
+      "tags": ["url", "scraper", "bulk", "http", "metadata", "seo"],
+      "limits": {
+        "max_urls": 5000,
+        "timeout": 300,
+        "rate_limit_rpm": 60
+      }
+    },
+    {
+      "id": "archive_worker",
+      "name": "Archive Decompression & Tree Inspection",
+      "tags": ["zip", "tar", "archive", "decompress", "tree"],
+      "limits": {
+        "max_file_size_mb": 200,
+        "timeout": 120
+      }
+    },
+    {
+      "id": "document_worker",
+      "name": "Document & Code Parsing",
+      "tags": ["pdf", "markdown", "json", "csv", "yaml", "docx", "conversion"],
+      "limits": {
+        "max_file_size_mb": 50,
+        "timeout": 60
+      }
+    },
+    {
+      "id": "media_worker",
+      "name": "FFmpeg Media Transcoding & Audio Extraction",
+      "tags": ["ffmpeg", "audio", "video", "transcode", "mp3", "mp4"],
+      "limits": {
+        "max_file_size_mb": 500,
+        "timeout": 300,
+        "max_concurrent": 2
+      }
+    },
+    {
+      "id": "ai_worker",
+      "name": "Gemini AI Text/Code Generation",
+      "tags": ["gemini", "llm", "writing", "research", "code", "translation"],
+      "limits": {
+        "max_input_chars": 200000,
+        "timeout": 120,
+        "rate_limit_rpm": 60
+      }
+    },
+    {
+      "id": "gemini_generalist_worker",
+      "name": "Gemini Generalist / Reasoning Fallback",
+      "tags": ["reasoning", "fallback", "custom_logic"],
+      "limits": {
+        "max_input_chars": 100000,
+        "timeout": 120,
+        "rate_limit_rpm": 30
+      }
+    }
+  ],
+  "technical_specs": {
+    "total_workers": 6,
+    "thread_model": "daemon-threads",
+    "uptime_target": "24/7",
+    "global_rate_limit_rpm": 120,
+    "max_concurrent_tasks": 10,
+    "max_task_timeout_seconds": 300,
+    "supports_streaming": false,
+    "supports_push_notifications": true,
+    "maintains_state_history": true,
+    "input_formats": ["application/json", "multipart/form-data", "text/plain"]
+  },
+  "seo": {
+    "keywords": [
+      "pdf-to-markdown", "pdf-extractor", "audio-extractor", "ffmpeg-transcoder",
+      "python-execution", "code-sandbox", "web-scraper", "bulk-url-checker",
+      "csv-to-json", "zip-extractor", "ai-researcher", "data-parser",
+      "media-processing", "gemini-ai", "token-optimization", "a2a-agent",
+      "omnitask-agent", "multi-worker", "x402-merchant", "payai",
+      "presentation-generator", "book-writer", "bot-builder", "website-generator", "apk-code-generator"
+    ],
+    "intents": [
+      "convert_document", "extract_audio", "transcode_media", "run_python_code",
+      "scrape_urls", "analyze_data", "unzip_archive", "generate_content",
+      "research_topic", "bulk_url_check", "translate_text", "review_code"
+    ],
+    "use_cases": [
+      "Bulk URL validation for SEO audits",
+      "PDF to Markdown conversion for RAG pipelines",
+      "Media preprocessing to reduce LLM token cost",
+      "Automated research memos with citations",
+      "Pay-per-task x402 micropayments via PayAI"
+    ]
+  }
+}
