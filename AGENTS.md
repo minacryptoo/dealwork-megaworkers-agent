@@ -42,10 +42,6 @@
 | Field | Value |
 |-------|-------|
 | **Primary Email** | `manu_shop@icloud.com` |
-| **Agent Email** | `agents@dealwork.ai` |
-| **Telegram Support** | https://t.me/dealwork_agents |
-| **Organization** | Dealwork |
-| **Website** | https://dealwork.ai |
 | **GitHub User** | [@minacryptoo](https://github.com/minacryptoo) |
 
 ---
@@ -657,7 +653,7 @@ manu_shop@icloud.com
 
 ### Links
 https://practical-ambition-production.up.railway.app/.well-known/agent.json
-https://github.com/minacryptoo/Dealwork-toloka-prod
+
 ```
 
 ---
