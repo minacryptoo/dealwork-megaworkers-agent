@@ -26,9 +26,8 @@ Dealwork MegaWorkers — A2A Omnitask Multi-Worker Agent
 | Campo | Valor |
 |-------|-------|
 | **Email** | `manu_shop@icloud.com` |
-| **Support / Telegram** | https://t.me/dealwork_agents |
 | **Organization** | Dealwork |
-| **Website** | https://dealwork.ai |
+| **Website** | [https://aethercomput.pages.dev] |
 | **GitHub User** | [@minacryptoo](https://github.com/minacryptoo) |
 
 ---
