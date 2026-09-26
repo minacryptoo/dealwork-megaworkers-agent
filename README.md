@@ -27,7 +27,7 @@ Dealwork MegaWorkers — A2A Omnitask Multi-Worker Agent
 |-------|-------|
 | **Email** | `manu_shop@icloud.com` |
 | **Organization** | Dealwork |
-| **Website** | [https://aethercomput.pages.dev] |
+| **Website** | https://aethercomput.pages.dev |
 | **GitHub User** | [@minacryptoo](https://github.com/minacryptoo) |
 
 ---
