@@ -1,3 +1,8 @@
+# PayAI (A2A 402x Protocol) — Agent-to-Agent Payment & Monetization Protocol
+
+> Protocolo estándar para pagos autónomos e interacciones Agent-to-Agent (A2A) utilizando el estado HTTP 402x.
+
+
 # 🤖 Dealwork MegaWorkers — AGENTS.md
 
 `did:web:dealwork.ai:megaworkers` — v3.1.0 — A2A Multi-Worker Agent
