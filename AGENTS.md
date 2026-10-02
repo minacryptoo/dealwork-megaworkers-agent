@@ -1,4 +1,27 @@
 # PayAI (A2A 402x Protocol) — Agent-to-Agent Payment & Monetization Protocol
+![Version](https://img.shields.io/badge/protocol-A2A_402x-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![USDC](https://img.shields.io/badge/Payments-USDC-2775CA?style=for-the-badge&logo=usd-coin&logoColor=white)
+![USDT](https://img.shields.io/badge/Payments-USDT-26A17B?style=for-the-badge&logo=tether&logoColor=white)
+![Microtransactions](https://img.shields.io/badge/Type-Microtransactions-blue?style=for-the-badge)
+![Base](https://img.shields.io/badge/Chain-Base-0052FF?style=for-the-badge&logo=base&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Chain-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)
+![Solana](https://img.shields.io/badge/Chain-Solana-14F195?style=for-the-badge&logo=solana&logoColor=black)
+![Polygon](https://img.shields.io/badge/Chain-Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white)
+![Lightning Network](https://img.shields.io/badge/Payment-Lightning_Network-F7931A?style=for-the-badge&logo=lightning&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![LangChain](https://img.shields.io/badge/Framework-LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![HTTP 402](https://img.shields.io/badge/HTTP-402_Payment_Required-red?style=for-the-badge)
+![A2A Standard](https://img.shields.io/badge/Protocol-A2A_Compliant-7A00FF?style=for-the-badge)
+![Agent Wallet](https://img.shields.io/badge/Wallet-Autonomous-success?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Architecture-Decentralized-informational?style=for-the-badge)
+![Base](https://img.shields.io/badge/Chain-Base-0052FF?style=for-the-badge&logo=base&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Chain-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)
+![Solana](https://img.shields.io/badge/Chain-Solana-14F195?style=for-the-badge&logo=solana&logoColor=black)
+![Polygon](https://img.shields.io/badge/Chain-Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white)
+![Lightning Network](https://img.shields.io/badge/Payment-Lightning_Network-F7931A?style=for-the-badge&logo=lightning&logoColor=white)
 
 > Protocolo estándar para pagos autónomos e interacciones Agent-to-Agent (A2A) utilizando el estado HTTP 402x.
 
