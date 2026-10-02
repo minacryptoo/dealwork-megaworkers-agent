@@ -21,7 +21,7 @@ Dealwork MegaWorkers es un agente A2A multi-worker de nivel producción especial
 | Primary Email | `manu_shop@icloud.com` |
 | GitHub User | `@minacryptoo` |
 | Repo | `minacryptoo/Dealwork-toloka-prod` (privado) |
-| Support | https://t.me/dealwork_agents |
+
 
 ---
 
@@ -35,7 +35,7 @@ Transport:           JSONRPC
 Preferred Transport: JSONRPC
 Category:            developer_tools_and_data_processing
 Languages:           en, es
-Icon:                https://dealwork.ai/static/icon.png
+
 
 ### Registros activos
 
