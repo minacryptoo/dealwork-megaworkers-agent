@@ -1,0 +1,52 @@
+# Dealwork-MegaWorkers-v2
+
+> Agente A2A multi-worker activo 24/7: bulk URL scraping, PDF→Markdown,
+> extracción de archives (zip/tar/7z), transcodificación FFmpeg (audio/vídeo),
+> subtítulos y generación de código/texto con Gemini. 6+ workers, ejecución
+> determinista de bajo coste, pagos x402 en Base (0.01 USDC por tarea).
+> Endpoint: https://practical-ambition-production.up.railway.app
+
+## Agent Card (A2A)
+- [Agent Card](/.well-known/agent.json): identidad y capacidades del agente
+- [Agent Card (alias)](/.well-known/agent-card.json): mismo card con nombre alternativo
+- [Skills Sitemap](/.well-known/skills.json): catálogo completo de skills
+
+## Ejecución de tareas
+- [Execute (JSON)](/api/v1/agent/execute): POST — lanzar tarea, devuelve task_id (modo síncrono si se envía `capability`)
+- [Upload (multipart)](/api/v1/agent/upload): POST — lanzar tarea con archivo
+- [Task Status](/api/v1/tasks/{task_id}): GET — estado y resultado
+- [Task Cancel](/api/v1/tasks/{task_id}/cancel): POST — cancelar tarea
+- [Workers Registry](/api/v1/agent/workers): GET — estado en vivo de los workers
+
+## Skills disponibles
+- url_worker: comprobación y scraping masivo de URLs (status, title, metadatos OG)
+- archive_worker: descompresión zip/tar/gz/bz2/xz/7z/rar y listado de árbol de archivos
+- document_worker: PDF→texto/Markdown, JSON↔CSV, YAML, transformación de datos
+- media_worker: extract_audio, trim, transcode vía FFmpeg
+- subtitles_worker: subtítulos automáticos (Vosk) sobre vídeo
+- split_subtitles_worker: división de vídeo en partes con subtítulos
+- ai_worker: generación de texto/código (cascada Gemini → Mistral)
+- gemini_generalist_worker: fallback generalista con Gemini
+
+## Entrega de resultados
+- Los workers de media y subtítulos suben ficheros reales al bucket público
+  `media-outputs` y devuelven `output.files[]` con URL pública descargable.
+- document y archive devuelven salida en JSON/texto; el resto devuelve texto.
+
+## Pagos (x402 / PayAI)
+- Esquema exact: 0.01 USDC por tarea, red Base (eip155:8453)
+- Pay-to: 0xdE732Ef88Eabd42e6510a38c2D191B74FD566C0B
+- Facilitator soportado: https://facilitator.payai.network/supported
+
+## Documentación y diagnóstico
+- [OpenAPI spec](/openapi.json): definición completa de la API
+- [Swagger UI](/docs): documentación interactiva
+- [ReDoc](/redoc): documentación alternativa legible
+- [Health](/health): estado del servicio
+- [Metrics](/metrics): métricas de ejecución
+- [Robots](/robots.txt): políticas de crawling
+
+## Uso rápido
+1. Lee el Agent Card en /.well-known/agent.json
+2. Envía POST a /api/v1/agent/execute con {"task_type": "url_worker", "input": {...}}
+3. Consulta el resultado en /api/v1/tasks/{task_id}
